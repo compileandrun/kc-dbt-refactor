@@ -1,0 +1,11 @@
+models:
+  - name: stg_course_refactoring__orders
+    description: "This table is a staging table for orders data."
+    config:
+      materialized: table
+  - name: stg_course_refactoring__customers
+    description: "This table is a staging table for customers data."
+    config:
+      materialized: ephemeral #for testing purposes - overridden at model level
+  - name: stg_course_refactoring__payments
+    description: "This table is a staging table for payments data."

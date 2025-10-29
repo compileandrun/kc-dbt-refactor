@@ -1,0 +1,26 @@
+sources:
+  - name: raw_data #name I will use to refer to this source in my models
+    description: "This is the raw data source for course_refactoring project."
+    schema: refactoring_raw #name of the dataset where the data is located
+    tables:
+      - name: orders
+        description: "This table contains raw orders data."
+        columns:
+          - name: id
+            tests:
+              - not_null
+              - unique
+      - name: customers
+        description: "This table contains raw customers data."
+        columns:
+          - name: id
+            tests:
+              - not_null
+              - unique
+      - name: payments
+        description: "This table contains raw payments data."
+        columns:
+          - name: id
+            tests:
+              - not_null
+              - unique

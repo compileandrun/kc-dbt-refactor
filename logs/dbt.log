@@ -1,31 +1,11 @@
 Installing dbt project and profile setup
 Info Created .vscode/extensions.json with dbt extension recommendation
 Success Project created successfully!
-Info Project name: course_refactoring
-Info Project directory: course_refactoring
-Info Setting up your profile...
-Info Creating new profile...
-Found dbt_cloud.yml configuration
-Found active project: Analytics (ID: 70471823428488)
-Failed to fetch cloud config: Failed to fetch user credentials: error in response: status code 401 Unauthorized
-No cloud config found for this adapter/project
-Success Profile written to /Users/koray/.dbt/profiles.yml
+Info Project name: dbt_multi_flag
+Info Project directory: dbt_multi_flag
 Validating profile inputs, adapters, and connection
 
 dbt-fusion 2.0.0-preview.34
    Loading ~/.dbt/profiles.yml
- Debugging profile: dev
- Debugging dbt version: 2.0.0-preview.34
- Debugging platform: macos aarch64 (unix)
- Debugging adapter type: bigquery (remote)
- Debugging dependencies:
-  git: OK
- Debugging connection:
-  "database": "manifest-surfer-352407",
-  "schema": "refactoring",
-  "method": "service-account",
-  "location": "europe-west1",
-  "dataproc_batch": null
- Debugging connection test: OK
-  Debugged All checks passed!
-  Finished 'init' target 'dev' in 3s 599ms
+error: dbt1001: Profile 'dbt_multi_flag' not found in profiles.yml
+  Finished 'init'  with 1 error in 37ms
